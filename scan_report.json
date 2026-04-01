@@ -1,0 +1,44 @@
+{
+    "target": "scanme.nmap.org",
+    "scan_date": "2026-04-01 19:37:15",
+    "open_ports": [
+        {
+            "port": 22,
+            "state": "open",
+            "service": "ssh",
+            "version": "",
+            "banner": "No banner"
+        },
+        {
+            "port": 80,
+            "state": "open",
+            "service": "http",
+            "version": "",
+            "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 01 Apr 2026 23:37:45 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nContent-Type: text/html"
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "port": 22,
+            "service": "SSH",
+            "risk": "Medium",
+            "description": "Check for outdated SSH versions vulnerable to exploits"
+        },
+        {
+            "port": 80,
+            "service": "HTTP",
+            "risk": "Medium",
+            "description": "Unencrypted web traffic, check for outdated web servers"
+        }
+    ],
+    "os_detection": null,
+    "summary": {
+        "total_open_ports": 2,
+        "total_vulnerabilities": 2,
+        "critical": 0,
+        "high": 0,
+        "medium": 2,
+        "low": 0
+    },
+    "target_ip": "45.33.32.156"
+}
